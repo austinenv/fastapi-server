@@ -16,4 +16,4 @@ RUN useradd fastapi-user
 USER fastapi-user
 
 # start the FastAPI server
-CMD ["fastapi", "dev", "src/main.py"]
+CMD ["fastapi", "run", "src/main.py", "--port", "80"]
